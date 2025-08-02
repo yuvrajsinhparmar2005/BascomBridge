@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-shapes .shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+}
+
+.shape1 {
+  width: 400px;
+  height: 400px;
+  background: #ffffff;
+  top: -50px;
+  left: -100px;
+}
+
+.shape2 {
+  width: 300px;
+  height: 300px;
+  background: #1363df;
+  bottom: -80px;
+  right: -60px;
+}
+
+.container {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.left {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.left img {
+  width: 150px;
+  max-width: 250px;
+}
+
+.left h2 {
+  margin: 20px 0 10px;
+}
+
+.right {
+  flex: 1;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+.toggle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.toggle span {
+  margin: 0 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.slider {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background: #fff;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.slider::before {
+  content: '';
+  width: 26px;
+  height: 26px;
+  background: #1363df;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+
+#switch:checked + .slider::before {
+  transform: translateX(30px);
+}
+
+.form {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.form.active {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  color: #1363df;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-box input,email {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #1363df;
+  color: #000;
+  font-size: 16px;
+}
+
+.input-box label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: #333;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -10px;
+  font-size: 12px;
+  color: #1363df;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1363df;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0b4cbd;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

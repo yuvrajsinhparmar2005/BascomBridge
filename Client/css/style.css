@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Bungee+Spice&family=Caveat:wght@400..700&family=Doto:wght@100..900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lexend:wght@100..900&family=Nerko+One&family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Main-font: "Inria Serif", system-ui;
+    --Primary-color: #ff618b;
+    --Secondary-color: #f9386b;
+    --Neutral-color: #e6e8ed;
+    --Dark-color: #0B0C2A;
+    --alertSucces-color: #b00020; 
+    --Hover-color: #f9386b;
+    --bg-pur-color: #e6e8ed;
+    --bg-purple:#f7f8fb ;
+    --Card-color:#ff618b;
+    --Hover-Card-Color:#f9386b;
+    --Bright-white: #ffffff;
+    --AcitveLightGrey-color: #f0f0f0;
+    --light-grey: #ffffff;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--Main-font);
+    color: var(--Dark-color);
+}
+i{
+    font-size: 13px !important;
+}
+body {
+    font-family: var(--Main-font);
+    background-color: #ffffff;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Dark-color);
+    transition: all 0.5s ease;
+}
+
+li {
+    float: left;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 120px;
+    background-color: var(--Bright-white);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+}
+
+.nav-bar img {
+    width: 200px;
+    padding: 20px 0;
+    margin-left: -80px;
+}
+
+.nav-bar .left {
+    width: 45%;
+    float: left;
+}
+
+.nav-bar .right {
+    float: right;
+    width: 45%;
+    padding-left: 30px;
+}
+
+.nav-bar a {
+    display: block;
+    padding: 50px 20px;
+}
+
+
+
+.nav-bar li:hover > a {
+    color: var(--alertSucces-color);
+    transform: translateY(-10px);
+}
+
+/* Submenu Styles */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background-color: var(--Bright-white);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.submenu li {
+    float: none;
+    width: 100%;
+}
+
+.submenu li a {
+    padding: 15px 20px;
+    color: var(--Dark-color);
+    font-size: 16px;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.submenu li a:hover {
+    background-color: var(--Primary-color);
+    color: var(--Bright-white);
+}
+
+/* Show submenu on hover */
+li.dropdown:hover .submenu {
+    display: block;
+}
+
+.section-white{
+    width: 100%;
+    background-color: var(--white-color);
+}
+.section-grey{
+    width: 100%;
+    background-color: var(--bg-purple);
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.50);
+    
+}
+.section-white .left{
+    float: left;
+    width: 45%;
+}
+.section-white .right{
+    width: 45%;
+    height: 100%;
+    float: right;
+    background-image: url('/Client/img/Bg-right.png');
+}
+
+
+.section-white .left li{
+    float: none;
+    margin: 0 0px 0 10px;
+}
+
+.section-white .left ul{
+    margin-left: -15px;
+}
+
+
+.section-white .sub-heading{
+    margin: 3px  0 0 0;
+    color: rgb(103, 101, 101);
+    
+    font-size: 16px;
+    
+    
+}
+.section-white .heading{
+    margin: 50px  0 0 0;
+}
+.section-white .left li p i{
+    color: var(--Secondary-color);
+}
+.section-white .left li p {
+    font-size: 16px;
+    color: rgb(103, 101, 101);
+}
+.section-white .left .TraningOption{
+    background-color: var(--Hover-color);
+    
+    color: var(--Bright-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s ease;
+}
+.section-white .left .TraningOption:hover{
+    background-color: var(--Primary-color);
+    color: var(--Bright-white);
+}
+
+.section-white .left .Advisor{
+    border: 2px solid var(--Primary-color);
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s ease;
+    margin-left: 20px;
+    
+}
+.section-white .left .Advisor:hover{
+    background-color: var(--Hover-color);
+    color: var(--Bright-white);
+}
+.section-white .left .button{
+    margin: 30px 0 0 0;
+}
+.spanQuote a{
+    display: inline-block;
+    color: var(--Hover-color);
+    text-decoration: underline var(--Hover-color);
+    transition: 0.5s ease;
+    margin: 20px 0 0 0;
+}
+.spanQuote a:hover{
+    color: var(--Primary-color);
+    text-decoration: none;
+}
+.Accredited{
+    margin: 30px 0 0 0;
+}
+.Accredited img{
+    width: 150px;
+    margin: 10px 0 0 0;
+}
+
+.section-white .right .rating{
+    font-size: 20px;
+    width: 340px;
+    background-color: white;
+    padding: 20px ;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 500px 0 100px 120px;
+}
+.section-white .right .rating .star{
+    color: rgb(255, 183, 0);
+}
+.section-grey .left{
+    float: left;
+    width: 75%;
+    margin-left: -80px;
+    margin-top: 50px;
+}
+.section-grey .left h2{
+    margin-bottom: 20px;
+}
+.section-grey .left p{
+    color: rgb(72, 71, 71);
+}
+
+
+.section-grey .left .Heding3{
+    margin-top: 35px;
+}
+.section-grey .left .list {
+    margin-top: 20px;
+    padding-top: 25px;
+}
+.section-grey .left .list i{
+    color: var(--Primary-color);
+    margin-right: 5px;
+}
+
+.section-grey .left .list .list-ul-sec{
+    float: right;
+    width: 40%;     
+    margin-bottom: 100px;
+    
+}
+
+.section-grey .left .list .list-ul-First{
+    float: left;
+}
+
+
+.section-grey .left .list .list-ul-First li{
+    float: none !important;
+    padding-top: 15px;
+}
+
+
+.section-grey .left .list .list-ul-sec li{
+    padding-top: 15px;
+    float: none !important;
+}
+
+.myclass{
+    margin: 140px 0 0 0;
+}
+
+.section-grey .right{
+    width: 28%;
+    float: right;
+    background-color: var(--bg-purplecolor);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: var(--Primary-color);
+    margin-top: 100px;
+    margin-left: 20px;
+    
+    
+}
+.section-grey .right .form h3{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section-grey .right .form input{
+    margin: 20px 0 40px 0;
+    width: 100%;
+    color: var(--Primary-color);
+    border: none;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.174);
+    border-bottom: 1px solid var(--Primary-color);
+}
+
+.section-grey .right .form button{
+    width: 100%;
+    background-color: transparent;
+    color: var(--Primary-color);
+    padding: 10px;
+    border: 2px solid var(--Primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+.section-grey .right .form button:hover{
+    background-color: var(--Primary-color);
+    color: var(--Bright-white);
+}
+
+
+.section-white  .Salary .container .main-salary h3{
+    margin-bottom: 20px;
+}
+.section-white  .Salary .container .main-salary p{
+    color: rgb(72, 71, 71);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.section-white  .Salary .container .main-salary{
+    margin-left: -80px;
+}
+/* Salary Benifit */
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.Salary{
+    margin: 100px 0;
+}
+.section-desc {
+    font-size: 16px;
+    color: var(--Bright-white);
+    margin-bottom: 40px;
+}
+
+.Salarycontainer {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.designation {
+    width: 25%;
+    padding: 1rem;
+    background: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.designation a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--Primary-color);
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.designation a:hover {
+    background-color: var(--Hover-color);
+    color: var(--Bright-white);
+}
+.designation a.active{
+    background-color: var(--AcitveLightGrey-color);
+    border-color: var(--Bright-white-color);
+    color: var(--Hover-color);
+}
+
+.graph-section {
+    width: 35%;
+    padding: 1rem;
+    text-align: center;
+    padding-left: 170px;
+}
+
+.bar-chart {
+    display: flex;
+    align-items: flex-end;
+    height: 250px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--Primary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.bar-inner {
+    width: 40px;
+    background-color: var(--Primary-color);
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s ease;
+}
+
+.bar-label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.companies {
+    width: 35%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.logos img {
+    width: 100px;
+    object-fit: contain;
+    margin-left: 5px;
+}
+
+.source {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+    position: absolute;
+    top: 290px;
+    margin-left: 105px;
+}
+
+
+.heading-Salary p{
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    color: var(--Primary-color);
+    margin-bottom: 20px;
+}
+.heading-Salary .dg {
+    width: 25%;
+} 
+.heading-Salary .as {
+    width: 30%;
+}
+.heading-Salary .hc {
+    width: 45%;
+}
+
+/* Card of Class type */
+.cardSec h2{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.section-grey .card{
+    margin-left: -80px;
+}
+.section-grey .card .leftBoot h3{
+    text-align: center;
+    font-size: 24px;
+    background-color: var(--Card-color);
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: var(--Bright-white);
+    transition: 0.5s ease;
+}
+
+.section-grey .card .leftBoot{
+    width: 30%;
+    float: left;
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin: 50px 0 ;
+    border-radius: 20px;
+    height: 500px;
+    margin-left: 3.33%;
+}
+.section-grey .card .leftBoot ul{
+    padding: 20px 0px;
+    margin: 0;
+}
+
+.section-grey .card .leftBoot li{
+    float: none !important;
+    padding: 10px 10px;
+    padding-left: 30px;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: var(--Dark-color);
+    
+}
+.section-grey .card .leftBoot li i{
+    color: var(--Primary-color);
+    margin-right: 5px;
+    
+}
+
+.section-grey .card .leftBoot p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.section-grey .card .leftBoot p .enrolNow{
+    color: var(--Hover-color);
+    padding: 10px 35px;
+    border-radius: 5px;
+    border: 2px solid var(--Primary-color);
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s ease;
+    margin: 0 0 0 90px;
+}
+.section-grey .card .leftBoot p .enrolNow:hover{
+    background-color: var(--Primary-color);
+    color: var(--Bright-white);
+    transform: scale(1.1);
+    
+}
+.section-grey .card .leftsec:hover{
+    transform: scale(1.1);
+}
+.section-grey .card .leftsec:hover h3 {
+    background-color: var(--Hover-Card-Color);
+    color: var(--Bright-white);
+}
+.section-grey .card .middlesec:hover h3 {
+    background-color: var(--Hover-Card-Color);
+    color: var(--Bright-white);
+}
+.section-grey .card .rightsec:hover h3 {
+    background-color: var(--Hover-Card-Color);
+    color: var(--Bright-white);
+}
+.section-grey .card .middlesec:hover {
+    transform: scale(1.1);
+}
+.section-grey .card .rightsec:hover {
+    transform: scale(1.1);
+}
+.section-grey .card .leftsec {
+    transition: transform 0.3s ease;
+}
+.section-grey .card .leftsec p{
+margin-top: 80px;
+margin-left: 40px;
+}
+
+.section-grey .card .middlesec p{
+margin-top: 100px;
+margin-left: 40px;
+}
+
+.section-grey .card .rightsec p{
+margin-top: 120px;
+margin-left: 40px;
+}
+.section-grey .card .middlesec {
+    transition: transform 0.3s ease;
+}
+
+.section-grey .card .rightsec {
+    transition: transform 0.3s ease;
+}
+
+.curriculum{
+    margin: 50px 0;
+    margin-left: -80px;
+    color: rgb(72, 71, 71);
+}
+.curriculum .readMoreBtn{
+    border: none;
+    background-color: transparent;
+    color: var(--Primary-color);
+}
+.curriculum .readMoreBtn:hover{
+    color: var(--Hover-color);
+    text-decoration: underline;
+}
+.curriculum h3{
+    margin: 30px 0 15px 0;
+    font-size: 16px;
+} 
+.curriculum p{
+    font-size: 16px;
+    color: rgb(72, 71, 71);
+    line-height: 1.6;
+}
+
+.curriculum-container {
+  max-width: 100%;
+  margin: 10px 0px 50px 0px;
+  border-radius: 12px;
+}
+
+.curriculum-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--Primary-color);
+  margin-bottom: 30px;
+}
+
+.accordion-item {
+  border: 1px solid var(--Neutral-color);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background-color: var(--Card-color);
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  background-color: var(--Hover-Card-color);
+  color: var(--Bright-white);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.module-title {
+  flex: 1;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.right-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.preview-link {
+  color: var(--Bright-white);
+  text-decoration: underline;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+.preview-link:hover {
+  opacity: 0.8;
+}
+
+.arrow {
+  font-size: 20px;
+  font-weight: extra-bold;
+  line-height: 1;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--light-grey);
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+}
+
+.accordion-item.active .accordion-content {
+  padding: 15px 20px;
+}
+
+.accordion-content ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.accordion-content li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  float: none !important;
+  font-size: 16px;
+  border-top: 1px solid var(--Neutral-color);
+}
+.noLine{
+    border: none !important;
+}

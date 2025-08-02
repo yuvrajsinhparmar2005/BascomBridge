@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education Login/Register</title>
+  <link rel="stylesheet" href="../Admin/css/Style.css" />
+</head>
+<body>
+  <div class="background-shapes">
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+  </div>
+
+  <div class="container">
+    <div class="left">
+      <img src="../Admin/img/Main-Logo.png" alt="Education Illustration" />
+      <h2>Bascom Bridge</h2>
+      <p>Join us and continue your learning journey.</p>
+    </div>
+
+    <div class="right">
+      <div class="form-wrapper">
+        <div class="toggle">
+          <input type="checkbox" id="switch" hidden />
+          <label for="switch" class="slider"></label>
+          <span>Login</span>
+          <span>Register</span>
+        </div>
+
+        <form id="loginForm" class="form active">
+          <h2>Login</h2>
+          <div class="input-box">
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+
+        <form id="registerForm" class="form">
+          <h2>Register</h2>
+          <div class="input-box">
+            <input type="text" required />
+            <label>Full Name</label>
+          </div>
+          <div class="input-box">
+            <input type="email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="../Admin/js/script.js"></script>
+</body>
+</html>
