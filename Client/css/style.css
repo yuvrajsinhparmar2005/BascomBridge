@@ -8,16 +8,16 @@
 
 :root {
     --Main-font: "Inria Serif", system-ui;
-    --Primary-color: #ff618b;
-    --Secondary-color: #f9386b;
+    --Primary-color: #EE4A62;
+    --Secondary-color: #FF5B5C;
     --Neutral-color: #e6e8ed;
     --Dark-color: #0B0C2A;
     --alertSucces-color: #b00020; 
     --Hover-color: #f9386b;
     --bg-pur-color: #e6e8ed;
     --bg-purple:#f7f8fb ;
-    --Card-color:#ff618b;
-    --Hover-Card-Color:#f9386b;
+    --Card-color:#D93654;
+    --Hover-Card-Color:#D93654;
     --Bright-white: #ffffff;
     --AcitveLightGrey-color: #f0f0f0;
     --light-grey: #ffffff;
@@ -591,18 +591,18 @@ li.dropdown:hover .submenu {
     transition: transform 0.3s ease;
 }
 .section-grey .card .leftsec p{
-margin-top: 80px;
-margin-left: 40px;
+    margin-top: 80px;
+    margin-left: 40px;
 }
 
 .section-grey .card .middlesec p{
-margin-top: 100px;
-margin-left: 40px;
+    margin-top: 100px;
+    margin-left: 40px;
 }
 
 .section-grey .card .rightsec p{
-margin-top: 120px;
-margin-left: 40px;
+    margin-top: 120px;
+    margin-left: 40px;
 }
 .section-grey .card .middlesec {
     transition: transform 0.3s ease;
@@ -637,269 +637,329 @@ margin-left: 40px;
 }
 
 .curriculum-container {
-  max-width: 100%;
-  margin: 10px 0px 50px 0px;
-  border-radius: 12px;
+    max-width: 100%;
+    margin: 10px 0px 50px 0px;
+    border-radius: 12px;
 }
 
 .curriculum-title {
-  text-align: center;
-  font-size: 2rem;
-  color: var(--Primary-color);
-  margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--Primary-color);
+    margin-bottom: 30px;
 }
 
 .accordion-item {
-  border: 1px solid var(--Neutral-color);
-  border-radius: 8px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  background-color: var(--Card-color);
-  transition: background-color 0.3s ease;
+    border: 1px solid var(--Neutral-color);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: var(--Card-color);
+    transition: background-color 0.3s ease;
 }
 
 .accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 20px;
-  background-color: var(--Hover-Card-color);
-  color: var(--Bright-white);
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background-color: var(--Hover-Card-color);
+    color: var(--Bright-white);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .module-title {
-  flex: 1;
-  font-weight: bold;
-  font-size: 16px;
+    flex: 1;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .right-actions {
-  display: flex;
-  gap: 15px;
-  align-items: center;
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .preview-link {
-  color: var(--Bright-white);
-  text-decoration: underline;
-  font-size: 0.9rem;
-  transition: opacity 0.2s;
+    color: var(--Bright-white);
+    text-decoration: underline;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
 }
 
 .preview-link:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .arrow {
-  font-size: 20px;
-  font-weight: extra-bold;
-  line-height: 1;
+    font-size: 20px;
+    font-weight: extra-bold;
+    line-height: 1;
 }
 
 .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  background-color: var(--light-grey);
-  transition: max-height 0.4s ease;
-  padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--light-grey);
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
 }
 
 .accordion-item.active .accordion-content {
-  padding: 15px 20px;
+    padding: 15px 20px;
 }
 
 .accordion-content ul {
-  padding-left: 18px;
-  margin: 0;
+    padding-left: 18px;
+    margin: 0;
 }
 
 .accordion-content li {
-  margin-bottom: 8px;
-  line-height: 1.6;
-  float: none !important;
-  font-size: 16px;
-  border-top: 1px solid var(--Neutral-color);
+    margin-bottom: 8px;
+    line-height: 1.6;
+    float: none !important;
+    font-size: 16px;
+    border-top: 1px solid var(--Neutral-color);
 }
 .noLine{
     border: none !important;
-
+    
 }
 
 
 .slider-container {
-      overflow: hidden;
-      padding: 30px 0;
-      background: #fff;
-    }
+    overflow: hidden;
+    padding: 30px 0;
+    background: #fff;
+}
 
-    .slider-track {
-      display: flex;
-      width: max-content;
-      animation: scroll 20s linear infinite;
-    }
+.slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
 
-    .slide {
-      flex: 0 0 auto;
-      width: 200px;
-      margin: 0 15px;
-    }
+.slide {
+    flex: 0 0 auto;
+    width: 200px;
+    margin: 0 15px;
+}
 
-    .slide img {
-      width: 100px;
-      border-radius: 8px;
-      margin: auto;
-      
-    }
+.slide img {
+    width: 100px;
+    border-radius: 8px;
+    margin: auto;
+    
+}
 
-    @keyframes scroll {
-      0% {
+@keyframes scroll {
+    0% {
         transform: translateX(0);
-      }
-      100% {
+    }
+    100% {
         transform: translateX(-50%);
-      }
-    }
-
-    /* Optional: Pause on hover */
-    .slider-container:hover .slider-track {
-      animation-play-state: paused;
-    }
-
-
-    /* Responsive for tablets and smaller (max-width: 1024px) */
-@media (max-width: 1024px) {
-    .container {
-        width: 90%;
-    }
-
-    .nav-bar .left,
-    .nav-bar .right {
-        width: 100%;
-        float: none;
-        text-align: center;
-    }
-
-    .nav-bar img {
-        margin-left: 0;
-    }
-
-    .nav-bar a {
-        padding: 20px 10px;
-    }
-
-    .section-white .left,
-    .section-white .right,
-    .section-grey .left,
-    .section-grey .right {
-        width: 100%;
-        float: none;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .section-grey .right {
-        margin-top: 40px;
-    }
-
-    .Salarycontainer {
-        flex-direction: column;
-    }
-
-    .designation,
-    .graph-section,
-    .companies {
-        width: 100%;
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .graph-section {
-        padding-left: 0;
-    }
-
-    .heading-Salary p {
-        float: none;
-        width: 100%;
-    }
-
-    .section-grey .card .leftBoot {
-        width: 80%;
-        margin: 20px auto;
-    }
-
-    .curriculum {
-        margin-left: 0;
     }
 }
 
-/* Responsive for mobile (max-width: 768px) */
+/* Optional: Pause on hover */
+.slider-container:hover .slider-track {
+    animation-play-state: paused;
+}
+
+.CerAccordionContainer {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.CerTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.CerTitle span {
+    color: #0078ff;
+}
+
+.CerAccordionItem {
+    border-top: 1px solid #ddd;
+}
+
+.CerAccordionItem:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.CerAccordionHeader {
+    width: 100%;
+    padding: 18px 20px;
+    background: #f3f6fa;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.CerAccordionHeader:hover {
+    background: #e8efff;
+}
+
+.CerAccordionContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: #ffffff;
+    padding: 0 20px;
+}
+
+.CerAccordionContent p,
+.CerAccordionContent ul {
+    margin: 15px 0;
+}
+
+.CerAccordionContent ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.CerAccordionItem.active .CerAccordionContent {
+    max-height: 500px; /* adjust as needed */
+    padding: 15px 20px;
+}
+.main-Certificatoion{
+    margin-left: -80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.main-Certificatoion .left{
+    width: 70%;
+    padding: 20px 100px;
+    padding-right: 0;
+    float: left;
+}
+.main-Certificatoion .right{
+    float: right;
+    width: 30%;
+    margin: 70px 0 0 -20px;
+}
+.main-Certificatoion .right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Review */
+.testimonial-section {
+  padding: 40px 20px;
+  /* text-align: center; */
+}
+
+.testimonial-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--Dark-color);
+}
+.testimonial-section h2 span {
+  color: var(--Primary-color);
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 10px;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  flex: 0 0 300px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-bottom: 4px solid var(--Primary-color);
+  text-align: left;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0px 0 4px;
+  color: var(--text);
+}
+
+.card .role {
+  font-size: 14px;
+  color: var(--Card-color);
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.review {
+  font-size: 14px;
+  color: var(--Dark-color);
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--Primary-color);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.nav:hover {
+  background: var(--Secondary-color);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
 @media (max-width: 768px) {
-    .nav-bar {
-        height: auto;
-        padding-bottom: 20px;
-    }
-
-    .nav-bar img {
-        width: 150px;
-        padding: 10px 0;
-    }
-
-    .nav-bar li {
-        float: none;
-        display: inline-block;
-    }
-
-    .section-white .right {
-        background-image: none;
-    }
-
-    .section-white .right .rating {
-        margin: 30px auto;
-    }
-
-    .logos {
-        flex-wrap: wrap;
-    }
-
-    .logos img {
-        width: 80px;
-    }
-
-    .slider-track {
-        animation-duration: 30s;
-    }
-
-    .section-grey .card .leftBoot p .enrolNow {
-        margin-left: 0;
-    }
-
-    .section-grey .card .leftBoot p {
-        margin-left: 0;
-    }
-
-    .section-grey .left .list .list-ul-First,
-    .section-grey .left .list .list-ul-sec {
-        float: none;
-        width: 100%;
-    }
-
-    .section-grey .left {
-        margin-left: 0;
-    }
-
-    .section-grey .card .leftBoot {
-        height: auto;
-    }
-
-    .accordion-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .right-actions {
-        margin-top: 10px;
-    }
+  .card {
+    flex: 0 0 90%;
+  }
 }
