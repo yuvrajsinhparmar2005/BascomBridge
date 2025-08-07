@@ -133,7 +133,6 @@ li {
 li.dropdown:hover .submenu {
     display: block;
 }
-
 .section-white{
     width: 100%;
     background-color: var(--white-color);
@@ -147,6 +146,10 @@ li.dropdown:hover .submenu {
 .section-white .left{
     float: left;
     width: 45%;
+}
+.spanQuote{
+    display: inline-block;
+    margin-bottom: 140px;
 }
 .section-white .right{
     width: 45%;
@@ -1084,7 +1087,7 @@ li.dropdown:hover .submenu {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
     position: relative;
     transition: 0.3s;
 }
@@ -1225,4 +1228,40 @@ li.dropdown:hover .submenu {
 
 .Trending-Course{
     margin-left: -80px;
+}
+/* Sticky Header */
+.nav-bar-hidden {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--Bright-white);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: top 0.3s ease-in-out;
+    padding-left: 30px;
+}
+
+.nav-bar-hidden ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar-hidden li a {
+    display: block;
+    padding: 20px 15px 0 15px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.nav-bar-hidden li:hover > a {
+    color: var(--alertSucces-color);
+}
+html {
+    scroll-behavior: smooth;
 }
